@@ -1,15 +1,15 @@
-Customer & Sales SQL Analysis — SQL
+# Customer & Sales SQL Analysis
 
-«A SQL-based analytics project designed to analyze customer behavior, order performance, revenue trends, and sales performance using relational data.»
+> A SQL-based analytics project designed to analyze customer behavior, order performance, revenue trends, and sales performance using relational data.
 
-"SQL" (https://img.shields.io/badge/SQL-Analysis-blue)
-"Data Analytics" (https://img.shields.io/badge/Data-Analytics-green)
-"PostgreSQL" (https://img.shields.io/badge/PostgreSQL-Database-blue)
-"Status" (https://img.shields.io/badge/Status-Completed-success)
+![SQL](https://img.shields.io/badge/SQL-Analysis-blue)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
-📌 Project Overview
+## 📌 Project Overview
 
 The Customer & Sales SQL Analysis project analyzes relational customer, order, and sales data to generate meaningful business insights.
 
@@ -19,7 +19,7 @@ The analysis covers customer purchasing behavior, order performance, revenue con
 
 ---
 
-💼 Business Problem
+## 💼 Business Problem
 
 Businesses need to understand customer purchasing patterns and sales performance to make better decisions.
 
@@ -34,11 +34,9 @@ Key business questions include:
 - Which customers contribute significantly to total revenue?
 - How does revenue vary across different customer segments?
 
-This project uses SQL analytics to answer these questions.
-
 ---
 
-🎯 Project Objectives
+## 🎯 Project Objectives
 
 - Analyze customer purchasing behavior
 - Analyze order and sales performance
@@ -52,28 +50,7 @@ This project uses SQL analytics to answer these questions.
 
 ---
 
-🗂️ Data Model
-
-The project works with related relational datasets such as:
-
-Customers
-   │
-   └── Customer ID
-          │
-          ▼
-        Orders
-          │
-          ├── Order ID
-          ├── Customer ID
-          └── Order Date
-
-Depending on the available dataset, additional product or sales attributes can be connected through appropriate keys.
-
----
-
-🧹 Data Preparation & Validation
-
-Before analysis, the data was reviewed and validated for quality.
+## 🧹 Data Preparation & Validation
 
 Key activities included:
 
@@ -83,15 +60,12 @@ Key activities included:
 - Checking inconsistent values
 - Reviewing outliers
 - Validating order and customer records
-- Ensuring reliable aggregation results
 
 ---
 
-🔍 SQL Analysis
+## 🔍 SQL Techniques Used
 
-The project demonstrates practical SQL techniques including:
-
-Basic SQL
+### Basic SQL
 
 - SELECT
 - WHERE
@@ -101,7 +75,7 @@ Basic SQL
 - DISTINCT
 - CASE statements
 
-Aggregations
+### Aggregations
 
 - COUNT
 - SUM
@@ -109,13 +83,13 @@ Aggregations
 - MIN
 - MAX
 
-Joins
+### Joins
 
 - INNER JOIN
 - LEFT JOIN
 - Multiple-table joins
 
-Advanced SQL
+### Advanced SQL
 
 - Subqueries
 - Common Table Expressions (CTEs)
@@ -127,11 +101,9 @@ Advanced SQL
 
 ---
 
-📊 Key Analysis Areas
+## 📊 Key Analysis Areas
 
-Customer Analysis
-
-Analyzed customers based on:
+### Customer Analysis
 
 - Total purchases
 - Number of orders
@@ -139,9 +111,7 @@ Analyzed customers based on:
 - Average order value
 - Purchase frequency
 
-Order Analysis
-
-Analyzed:
+### Order Analysis
 
 - Total orders
 - Order trends
@@ -149,9 +119,7 @@ Analyzed:
 - Order frequency
 - Customer order distribution
 
-Revenue Analysis
-
-Analyzed:
+### Revenue Analysis
 
 - Total revenue
 - Revenue by customer
@@ -159,22 +127,22 @@ Analyzed:
 - Customer revenue contribution
 - High-value customers
 
-Customer Segmentation
+### Customer Segmentation
 
-Customers were analyzed and segmented based on purchasing behavior.
+Customers were analyzed based on purchasing behavior.
 
 Examples include:
 
 - High-value customers
 - Frequent customers
 - Low-value customers
-- Inactive or low-frequency customers
+- Low-frequency customers
 
 ---
 
-🧮 Advanced SQL Analysis
+## 🧮 Advanced SQL Analysis
 
-Window functions were used for analytical calculations such as:
+Window functions were used for:
 
 - Customer ranking
 - Revenue ranking
@@ -182,48 +150,47 @@ Window functions were used for analytical calculations such as:
 - Customer contribution analysis
 - Top-N customer identification
 
-Subqueries and CTEs were used to structure complex analytical queries and improve query readability.
+CTEs and subqueries were used to structure complex analytical queries.
 
 ---
 
-💡 Key Insights
+## 💡 Key Insights
 
 The analysis helps identify:
 
-- High-value customers contributing significantly to revenue
-- Customers with frequent purchasing behavior
+- High-value customers
+- Frequent purchasing customers
 - Revenue concentration among top customers
 - Order performance patterns
 - Product/category performance
-- Opportunities for customer retention and targeted marketing
+- Customer retention opportunities
 
-«Findings should be interpreted within the context of the underlying dataset.»
-
----
-
-💼 Business Recommendations
-
-Based on the analysis, businesses can consider:
-
-- Creating loyalty programs for high-value customers
-- Targeting frequent customers with personalized offers
-- Re-engaging low-frequency customers
-- Focusing marketing efforts on high-revenue segments
-- Monitoring revenue concentration
-- Using customer purchase behavior for targeted campaigns
-- Improving retention strategies using customer segmentation
+> Findings should be interpreted within the context of the underlying dataset.
 
 ---
 
-🔄 Analytics Workflow
+## 💼 Business Recommendations
 
+- Create loyalty programs for high-value customers
+- Target frequent customers with personalized offers
+- Re-engage low-frequency customers
+- Focus marketing efforts on high-revenue segments
+- Monitor revenue concentration
+- Use customer purchase behavior for targeted campaigns
+- Improve customer retention strategies
+
+---
+
+## 🔄 Analytics Workflow
+
+```text
 Raw Customer & Order Data
           ↓
 Data Validation
           ↓
 Data Cleaning
           ↓
-Database / Relational Tables
+Relational Tables
           ↓
 SQL Queries
           ↓
@@ -240,11 +207,13 @@ Revenue Analysis
 Business Insights
           ↓
 Recommendations
+```
 
 ---
 
-📂 Repository Structure
+## 📂 Repository Structure
 
+```text
 customer-sales-analysis-sql/
 │
 ├── sql/
@@ -258,10 +227,11 @@ customer-sales-analysis-sql/
 ├── .gitignore
 │
 └── README.md
+```
 
 ---
 
-🛠️ Technology Stack
+## 🛠️ Technology Stack
 
 - SQL
 - PostgreSQL
@@ -277,17 +247,15 @@ customer-sales-analysis-sql/
 
 ---
 
-📌 Project Status
+## 📌 Project Status
 
-🟢 Completed
+🟢 **Completed**
 
 The project demonstrates end-to-end SQL analysis of customer and order data, including data validation, relational querying, customer segmentation, revenue analysis, and advanced SQL techniques.
 
 ---
 
-🔮 Future Scope
-
-Potential future enhancements include:
+## 🔮 Future Scope
 
 - RFM customer segmentation
 - Customer lifetime value analysis
@@ -300,7 +268,7 @@ Potential future enhancements include:
 
 ---
 
-🧠 Skills Demonstrated
+## 🧠 Skills Demonstrated
 
 - SQL
 - PostgreSQL
@@ -321,7 +289,7 @@ Potential future enhancements include:
 
 ---
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 This project is developed for portfolio and educational purposes.
 
@@ -329,17 +297,20 @@ The analysis and insights are based on the available dataset and should be inter
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Rishu Singh
+### Rishu Singh
 
-B.Tech CSE (Data Science)
+B.Tech CSE (Data Science)  
 Data Analytics | SQL | Power BI | Excel
 
-GitHub: "rishu-data" (https://github.com/rishu-data)
+**GitHub:** [rishu-data](https://github.com/rishu-data)
 
-LinkedIn: "Rishu Singh" (https://www.linkedin.com/in/rishu-singh-51512b3b3)
+**LinkedIn:** [Rishu Singh](https://www.linkedin.com/in/rishu-singh-51512b3b3)
 
 ---
 
 ⭐ If you find this project useful or interesting, consider giving the repository a star.
+
+
+
